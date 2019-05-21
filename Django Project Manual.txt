@@ -1,0 +1,69 @@
+1. 빈 폴더를 만든다
+
+
+2. 가상환경을 만든다
+
+python -m venv (가상환경이름)
+
+가상환경이란?
+
+
+3. 가상환경실행(통의 뚜껑을 연다!)
+
+source (가상환경이름)/Scripts/activate
+
+
+4. 이제 통에 장고를 넣어두자!
+
+pip install django
+
+
+5. 폴더에 프로젝트를 만들자!
+
+django-admin startproject myproject
+
+
+6. cd myproject
+
+
+7. 서버 실행
+
+python manage.py runserver
+
+
+8. 서버 끄기
+
+ctrl + c
+
+
+9. 기능을 하는 앱을 하나 만들어주자!
+
+python manage.py startapp (앱 이름)
+
+
+10. app에  "templates" 폴더 만들고, html 고고 
+
+
+11. app이 만들졌다는 걸 알려줘야 함(settings.py 에 등록!)
+
+installed_apps 에 'myapp.apps.MyappConfig',
+
+
+12. response(함수)를 만든다
+
+def home(request):
+
+    return render(request, 'index.html')
+
+
+13. URL을 등록한다
+
+Urls.py
+
+import myapp.views
+
+path('',myapp.views.home, name='home'),
+
+(views.home 과 name의 이름은 같게 해주라 그게 좋다)
+
+-----------------------------------------------------------
