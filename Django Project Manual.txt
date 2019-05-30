@@ -11,7 +11,7 @@ python -m venv (가상환경이름)
 3. 가상환경실행(통의 뚜껑을 연다!)
 
 source (가상환경이름)/Scripts/activate
-
+/
 
 4. 이제 통에 장고를 넣어두자!
 

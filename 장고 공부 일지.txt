@@ -6,3 +6,7 @@
 장고 vs 코드에 설치
 터미널에서 'source'명령어를 입력하기 위해서는 git-bash만 가능하다
 장고를 이용하여 html 출력하기
+
+3일 - 19.05.25
+makemigrations : models.py에서 적용한 변경사항이나 추가된 혹은 삭제된 사항들을 감지하여 파일로 생성
+migrate : 적용되지 않은 migrations들을(설정값들을) 적용시키는 역할
